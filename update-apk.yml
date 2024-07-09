@@ -2,6 +2,6 @@
   become: yes
   tasks:
     - name: Update VMs APk
-      community.general.apk:
-        update_cache: true
-        upgrade: true
+      apk:
+        update_cache: yes
+        upgrade: yes
