@@ -1,0 +1,7 @@
+- hosts: alpine
+  become: yes
+  tasks:
+    - name: Update VMs APk
+      community.general.apk:
+        update_cache: true
+        upgrade: true
