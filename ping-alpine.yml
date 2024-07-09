@@ -1,3 +1,5 @@
-- name: Ping all alpine VMs & LXs
-  ansible.netcommon.net_ping:
-    dest: alpine
+- hosts: alpine
+
+  tasks:
+  - name: Ping all alpine VMs & LXs
+    ansible.netcommon.net_ping:
