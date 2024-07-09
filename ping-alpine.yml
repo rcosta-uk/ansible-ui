@@ -1,5 +1,8 @@
 - hosts: alpine
 
   tasks:
+  - name: Change ssh port to 8888
+    set_fact:
+      ansible_port: 3333  
   - name: Ping all alpine VMs & LXs
     ansible.builtin.ping:
