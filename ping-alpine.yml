@@ -2,4 +2,4 @@
 
   tasks:
   - name: Ping all alpine VMs & LXs
-    ansible.builtin.ping::
+    ansible.builtin.ping:
