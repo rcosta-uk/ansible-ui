@@ -1,0 +1,7 @@
+- hosts: "*"
+  become: yes
+  tasks:
+    - name: Update VMs APT
+      apt:
+        update_cache: yes
+        upgrade: yes
