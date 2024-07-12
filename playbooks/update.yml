@@ -1,0 +1,6 @@
+- hosts: pve
+  tasks:
+    - name: Update 
+      apt:
+        update_cache: yes
+        upgrade: yes
